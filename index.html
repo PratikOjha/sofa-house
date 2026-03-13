@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Jay Ambe Sofa House | Bespoke Luxury Furniture</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#ecb613",
+              "background-light": "#f8f8f6",
+              "background-dark": "#221d10",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        html {
+            scroll-behavior: smooth;
+        }
+        @media (min-width: 768px) {
+            html {
+                scroll-snap-type: y mandatory;
+            }
+            section {
+                scroll-snap-align: start;
+            }
+        }
+        section {
+            min-height: 100vh;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        #mobile-menu {
+            display: none;
+        }
+        #mobile-menu.open {
+            display: flex;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 overflow-x-hidden">
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 px-6 py-4 flex items-center justify-between bg-background-dark/80 backdrop-blur-md border-b border-white/10">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">chair</span>
+<h2 class="text-xl font-extrabold tracking-tight uppercase">Jay Ambe</h2>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#hero">Home</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#expertise">Expertise</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#services">Services</a><a class="text-sm font-semibold hover:text-primary transition-colors" href="#gallery">Gallery</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#reviews">Reviews</a><a class="text-sm font-semibold hover:text-primary transition-colors" href="#faq">FAQ</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#contact">Contact</a>
+</div>
+<div class="flex items-center gap-3">
+<button class="bg-primary text-background-dark px-6 py-2 rounded-lg font-bold text-sm hidden md:flex items-center gap-2 hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-sm">call</span> CALL NOW
+</button>
+<button id="hamburger-btn" class="md:hidden flex flex-col gap-1.5 p-2" onclick="document.getElementById('mobile-menu').classList.toggle('open')">
+<span class="block w-6 h-0.5 bg-white"></span>
+<span class="block w-6 h-0.5 bg-white"></span>
+<span class="block w-6 h-0.5 bg-white"></span>
+</button>
+</div>
+</nav>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="fixed top-[65px] left-0 w-full z-40 bg-background-dark/95 backdrop-blur-md border-b border-white/10 flex-col px-6 py-6 gap-5 md:hidden">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#hero" onclick="document.getElementById('mobile-menu').classList.remove('open')">Home</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#expertise" onclick="document.getElementById('mobile-menu').classList.remove('open')">Expertise</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#services" onclick="document.getElementById('mobile-menu').classList.remove('open')">Services</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#gallery" onclick="document.getElementById('mobile-menu').classList.remove('open')">Gallery</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#reviews" onclick="document.getElementById('mobile-menu').classList.remove('open')">Reviews</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#faq" onclick="document.getElementById('mobile-menu').classList.remove('open')">FAQ</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#contact" onclick="document.getElementById('mobile-menu').classList.remove('open')">Contact</a>
+<button class="bg-primary text-background-dark px-6 py-2 rounded-lg font-bold text-sm flex items-center gap-2 w-max">
+<span class="material-symbols-outlined text-sm">call</span> CALL NOW
+</button>
+</div>
+<!-- Section 1: Hero -->
+<section class="relative flex items-center justify-center overflow-hidden" id="hero">
+<div class="absolute inset-0 bg-black/50 z-10"></div>
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Luxury modern green velvet sofa in a minimalist living room" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCT2cDAFdaTfG88QR0TOY0SQIt55D0ooQa2rrBIR1NdwvkkLNGE4z0LHiC9_GRbCjH8kbDSKqcDWXmrj7FqNrQjyjbazT4j_l4Ua_rFSTaCwCg0KgsxwDT2uLosojUW1E6PVCofEBYzuq7gQfOh-ms5HtoCLb-3fGjVD-Cz5Jwl_5lcxqArwiIKoiY1IlA5_WatUuCQRi_KUdY6kvlxHC5IflxOFPS1xnZ93TK_mRxAU-H_KU96BzFxmPHKvCKWUmzuCDOtO_fTKpZC');"></div>
+<div class="relative z-20 text-center px-4 max-w-4xl">
+<span class="text-primary font-bold tracking-[0.3em] uppercase mb-4 block">Premium Craftsmanship</span>
+<h1 class="text-5xl md:text-8xl font-black mb-6 leading-tight">Jay Ambe Sofa House</h1>
+<p class="text-xl md:text-2xl font-light text-slate-300 mb-10 max-w-2xl mx-auto">Bespoke Sofa Manufacturing &amp; Home Decor. We turn your vision into comfort.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary text-background-dark px-10 py-4 rounded-full font-black text-lg hover:shadow-[0_0_20px_rgba(236,182,19,0.4)] transition-all">VIEW OUR COLLECTION</button>
+<button class="border-2 border-white/50 text-white backdrop-blur-sm px-10 py-4 rounded-full font-black text-lg hover:bg-white hover:text-black transition-all">OUR PROCESS</button>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce">
+<span class="material-symbols-outlined text-white/50 text-4xl">keyboard_double_arrow_down</span>
+</div>
+</section>
+<!-- Section 2: Expertise -->
+<section class="flex flex-col md:flex-row items-stretch bg-background-dark" id="expertise">
+<div class="w-full md:w-1/2 px-6 py-16 md:p-24 flex flex-col justify-center">
+<h2 class="text-primary font-bold tracking-widest uppercase mb-4">Our Expertise</h2>
+<h3 class="text-4xl md:text-6xl font-black mb-8 leading-tight">Mastering Custom Artistry</h3>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="h-12 w-12 rounded-lg bg-primary/20 flex items-center justify-center shrink-0 border border-primary/30">
+<span class="material-symbols-outlined text-primary">architecture</span>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2">Order Base Work</h4>
+<p class="text-slate-400">Exclusive bespoke services for unique home interiors. We don't just sell sofas; we build them from your imagination to the last stitch.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="h-12 w-12 rounded-lg bg-primary/20 flex items-center justify-center shrink-0 border border-primary/30">
+<span class="material-symbols-outlined text-primary">design_services</span>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2">Client-Centric Design</h4>
+<p class="text-slate-400">Every dimension, fabric choice, and cushion firmness is tailored to your specific lifestyle and body ergonomics.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="h-12 w-12 rounded-lg bg-primary/20 flex items-center justify-center shrink-0 border border-primary/30">
+<span class="material-symbols-outlined text-primary">verified</span>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2">Heritage Craftsmanship</h4>
+<p class="text-slate-400">Hand-finished by master artisans using premium materials ensuring durability that lasts generations.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 relative min-h-[350px]">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Close up of high quality upholstery fabric and stitching details" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAc4-lBcxmkEg64CkMNnfWsWANfU9TQwjXjCLEO3FGgINk-hw-kGtQounyjHuRCygK2XMxkVDzmtVhNLe6hykLuSBGjnz469yMwIk3IKxBips6h_tCW0hCgLs1IO_anBaemj6HiglvHdj4sOaOmxTBa1c3qdtJIRtAtoHQ21XRWpnupS83Hj4_LsUM8PTuIssWP5vtcL36yJJIiJWxAJpza6Wfp9NmUkkwydRfxp_zilsO9oJIwcY6lPSW-XYcQilDDNNGOv5thgrVH');"></div>
+<div class="absolute bottom-0 left-0 p-12 bg-gradient-to-t from-background-dark to-transparent w-full">
+<p class="text-2xl italic font-light text-slate-300">"Where quality meets imagination in every fold of fabric."</p>
+</div>
+</div>
+</section>
+<!-- Section 3: Services -->
+<section class="bg-background-light dark:bg-background-dark px-6 py-20 md:p-24 flex flex-col justify-center" id="services">
+<div class="max-w-7xl mx-auto w-full">
+<div class="mb-16 text-center md:text-left">
+<h2 class="text-primary font-bold tracking-widest uppercase mb-4">What We Offer</h2>
+<h3 class="text-4xl md:text-6xl font-black mb-4">Premium Home Services</h3>
+<p class="text-slate-400 max-w-2xl">From structural comfort to aesthetic finishing, we cover every aspect of your home's luxury interior.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Service 1 -->
+<div class="group bg-slate-900/40 border border-white/5 rounded-2xl overflow-hidden hover:border-primary/50 transition-all">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Elegant luxury grey sofa" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8wWqnc1GHUYr6E-MlVhZqpIdaFRi1BaUkAt5UqRzgVBJ5raRWFTirmG1BL0vzcjjpA6tSGcunhGlQc1HlxzhRcx-PlU51T0YbFDz8WstUp79_76K7BrGm96wZsIblU7TUU7sMsrq1rmAg8j8enaCsOEIhKbq5G5pYWNt56eP2gEmfGpbnsFjPTp23UwPPIgx0j1-TPKkRr8TLilL1a1CqdmblsRup0Q4RmfoRJSuBdgExcQ26MDGyW8knlkd-VSdyjcOoC1giI4Gn"/>
+</div>
+<div class="p-6">
+<h4 class="text-xl font-bold mb-2 text-primary">Sofa Manufacturing</h4>
+<p class="text-sm text-slate-400">Custom-built luxury seating tailored to your living space dimensions.</p>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="group bg-slate-900/40 border border-white/5 rounded-2xl overflow-hidden hover:border-primary/50 transition-all">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Luxury designer curtains hanging from window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBETBorC-ZiQFRL0eCL4AQeq7GmMc3F1PWrPrnfTnhweLWEM2cjJ9DUoJbThV0OuXBqSaZRCWvba4RBEOVe5oX7qJkhvz8a6O8SFWGdiiplahEyCA-aoSYkexRXUcBRSQke1Vw_BfPbYCf73__vZIG4KLm9741SOypD43ZKSYH7FL6B3o9AzI-abHtmoxFhT3uA3ZYpki0IsjO-sKiezCE0jTRG25ac7YUT0z5kciZqEoj0Z_Tp8etgfBng4_z8CJCrvB-pHR3iNSnD"/>
+</div>
+<div class="p-6">
+<h4 class="text-xl font-bold mb-2 text-primary">Designer Curtains</h4>
+<p class="text-sm text-slate-400">Elegant window dressings that define the mood of your rooms.</p>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="group bg-slate-900/40 border border-white/5 rounded-2xl overflow-hidden hover:border-primary/50 transition-all">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Plush decorative cushions on a couch" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwl3CmIuCcSxYxa8ZzWsMVakEtXYr7CPuUsD3CACfGtX0ZzTiNqabAfERBIDSRJLg4rL6VxnHuYLm_1f7msIu_Hdd1K_ccFraVfC2UQXynH0G5WoxCPf2b0-V1Y2LS-5kDDgjJ7O1hyicG3MvLsSkfhtQmAXKCNbCn1nG4HrLyjQIH41WTfl9dUGLh5AUMJpnvuDPMR5WbnmbzbVBvEPw2Dz4DtXTvw39NmEkW3UbuvZfTOTLNQ9t5aibfFy9oCjO7WcEmAhD6HWML"/>
+</div>
+<div class="p-6">
+<h4 class="text-xl font-bold mb-2 text-primary">Luxury Cushions</h4>
+<p class="text-sm text-slate-400">Premium soft accents providing the perfect finish and extra comfort.</p>
+</div>
+</div>
+<!-- Service 4 -->
+<div class="group bg-slate-900/40 border border-white/5 rounded-2xl overflow-hidden hover:border-primary/50 transition-all">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="High quality comfortable mattress and bed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmvVCrXlseF3vMWjhuJuq1pOIuyGn5dl7beKuEZ2_0nlXJnqo5NZY3eBYGdpcFdUtW7ZBiPk0S7Ru7iUtEM_JsaXu2TPD5ugjZwjFQZUf4ZRjEmLNR3FQpEAB58xYoHXKY98cBx6hEw1dYy14yTM9qQ5rB1vZ4cLKdTew7lXQWjfoetcOvnxb3Sg6fcGwdX71uSEiCJZm67O6hTZSCsx8TAYDtELP6kG8vOfuQ29uqTT9MoGN0i5OE6ymqOmEEchri2aZOFuftm_ey"/>
+</div>
+<div class="p-6">
+<h4 class="text-xl font-bold mb-2 text-primary">Orthopedic Mattresses</h4>
+<p class="text-sm text-slate-400">Ergonomic sleep solutions designed for health and rejuvenation.</p>
+</div>
+</div>
+</div>
+</div>
+</section><section class="bg-background-dark px-6 py-20 md:p-24 flex flex-col justify-center" id="gallery">
+<div class="max-w-7xl mx-auto w-full">
+<!-- Gallery Header -->
+<div class="mb-12 text-center">
+<h2 class="text-primary font-bold tracking-widest uppercase mb-4">Our Collection</h2>
+<h3 class="text-4xl md:text-6xl font-black mb-8">Product Gallery</h3>
+<!-- Category Filters -->
+<div class="flex flex-wrap justify-center gap-4 mb-12"><button class="px-8 py-3 rounded-full border-2 border-primary bg-primary text-background-dark font-black tracking-wide transition-all shadow-[0_0_15px_rgba(236,182,19,0.3)] hover:scale-105">All</button>
+<button class="px-8 py-3 rounded-full border-2 border-white/10 hover:border-primary hover:text-primary font-bold transition-all hover:bg-primary/5">Sofas</button>
+<button class="px-8 py-3 rounded-full border-2 border-white/10 hover:border-primary hover:text-primary font-bold transition-all hover:bg-primary/5">Curtains</button>
+<button class="px-8 py-3 rounded-full border-2 border-white/10 hover:border-primary hover:text-primary font-bold transition-all hover:bg-primary/5">Mattresses</button></div>
+</div>
+<!-- Gallery Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Item 1: Sofa -->
+<div class="group relative overflow-hidden rounded-2xl aspect-square bg-slate-900">
+<img alt="Bespoke Velvet Sofa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT2cDAFdaTfG88QR0TOY0SQIt55D0ooQa2rrBIR1NdwvkkLNGE4z0LHiC9_GRbCjH8kbDSKqcDWXmrj7FqNrQjyjbazT4j_l4Ua_rFSTaCwCg0KgsxwDT2uLosojUW1E6PVCofEBYzuq7gQfOh-ms5HtoCLb-3fGjVD-Cz5Jwl_5lcxqArwiIKoiY1IlA5_WatUuCQRi_KUdY6kvlxHC5IflxOFPS1xnZ93TK_mRxAU-H_KU96BzFxmPHKvCKWUmzuCDOtO_fTKpZC"/>
+<div class="absolute inset-0 bg-background-dark/80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-blur-sm"><div class="p-6 text-center">
+<span class="text-primary text-xs font-black uppercase tracking-[0.2em] mb-2 block">Order-Based Selection</span>
+<h4 class="text-white text-2xl font-bold mb-2">Premium Green Velvet</h4>
+<p class="text-slate-300 text-sm leading-relaxed">Custom-built frame with high-density foam, tailored to your living space dimensions.</p>
+<div class="mt-4 h-1 w-12 bg-primary mx-auto"></div>
+</div></div>
+</div>
+<!-- Item 2: Curtains -->
+<div class="group relative overflow-hidden rounded-2xl aspect-square bg-slate-900">
+<img alt="Luxury Designer Curtains" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBETBorC-ZiQFRL0eCL4AQeq7GmMc3F1PWrPrnfTnhweLWEM2cjJ9DUoJbThV0OuXBqSaZRCWvba4RBEOVe5oX7qJkhvz8a6O8SFWGdiiplahEyCA-aoSYkexRXUcBRSQke1Vw_BfPbYCf73__vZIG4KLm9741SOypD43ZKSYH7FL6B3o9AzI-abHtmoxFhT3uA3ZYpki0IsjO-sKiezCE0jTRG25ac7YUT0z5kciZqEoj0Z_Tp8etgfBng4_z8CJCrvB-pHR3iNSnD"/>
+<div class="absolute inset-0 bg-background-dark/80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-blur-sm"><div class="p-6 text-center">
+<span class="text-primary text-xs font-black uppercase tracking-[0.2em] mb-2 block">Bespoke Drapery</span>
+<h4 class="text-white text-2xl font-bold mb-2">Sheer Luxury Silk</h4>
+<p class="text-slate-300 text-sm leading-relaxed">Hand-crafted window dressings with custom pleats and premium lining options.</p>
+<div class="mt-4 h-1 w-12 bg-primary mx-auto"></div>
+</div></div>
+</div>
+<!-- Item 3: Mattress -->
+<div class="group relative overflow-hidden rounded-2xl aspect-square bg-slate-900">
+<img alt="Orthopedic Mattress" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmvVCrXlseF3vMWjhuJuq1pOIuyGn5dl7beKuEZ2_0nlXJnqo5NZY3eBYGdpcFdUtW7ZBiPk0S7Ru7iUtEM_JsaXu2TPD5ugjZwjFQZUf4ZRjEmLNR3FQpEAB58xYoHXKY98cBx6hEw1dYy14yTM9qQ5rB1vZ4cLKdTew7lXQWjfoetcOvnxb3Sg6fcGwdX71uSEiCJZm67O6hTZSCsx8TAYDtELP6kG8vOfuQ29uqTT9MoGN0i5OE6ymqOmEEchri2aZOFuftm_ey"/>
+<div class="absolute inset-0 bg-background-dark/80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-blur-sm"><div class="p-6 text-center">
+<span class="text-primary text-xs font-black uppercase tracking-[0.2em] mb-2 block">Ergonomic Design</span>
+<h4 class="text-white text-2xl font-bold mb-2">Sleep Support Plus</h4>
+<p class="text-slate-300 text-sm leading-relaxed">Custom firmness levels designed for your specific body ergonomics and health needs.</p>
+<div class="mt-4 h-1 w-12 bg-primary mx-auto"></div>
+</div></div>
+</div>
+<!-- Item 4: Modern Sofa -->
+<div class="group relative overflow-hidden rounded-2xl aspect-square bg-slate-900">
+<img alt="Grey Designer Sofa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8wWqnc1GHUYr6E-MlVhZqpIdaFRi1BaUkAt5UqRzgVBJ5raRWFTirmG1BL0vzcjjpA6tSGcunhGlQc1HlxzhRcx-PlU51T0YbFDz8WstUp79_76K7BrGm96wZsIblU7TUU7sMsrq1rmAg8j8enaCsOEIhKbq5G5pYWNt56eP2gEmfGpbnsFjPTp23UwPPIgx0j1-TPKkRr8TLilL1a1CqdmblsRup0Q4RmfoRJSuBdgExcQ26MDGyW8knlkd-VSdyjcOoC1giI4Gn"/>
+<div class="absolute inset-0 bg-background-dark/80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-blur-sm"><div class="p-6 text-center">
+<span class="text-primary text-xs font-black uppercase tracking-[0.2em] mb-2 block">Custom Prototype</span>
+<h4 class="text-white text-2xl font-bold mb-2">Minimalist Grey</h4>
+<p class="text-slate-300 text-sm leading-relaxed">Bespoke contemporary design featuring premium fabric selection and modular setup.</p>
+<div class="mt-4 h-1 w-12 bg-primary mx-auto"></div>
+</div></div>
+</div>
+<!-- Item 5: Accent Cushions (related to sofas/luxury) -->
+<div class="group relative overflow-hidden rounded-2xl aspect-square bg-slate-900">
+<img alt="Luxury Cushions" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwl3CmIuCcSxYxa8ZzWsMVakEtXYr7CPuUsD3CACfGtX0ZzTiNqabAfERBIDSRJLg4rL6VxnHuYLm_1f7msIu_Hdd1K_ccFraVfC2UQXynH0G5WoxCPf2b0-V1Y2LS-5kDDgjJ7O1hyicG3MvLsSkfhtQmAXKCNbCn1nG4HrLyjQIH41WTfl9dUGLh5AUMJpnvuDPMR5WbnmbzbVBvEPw2Dz4DtXTvw39NmEkW3UbuvZfTOTLNQ9t5aibfFy9oCjO7WcEmAhD6HWML"/>
+<div class="absolute inset-0 bg-background-dark/80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-blur-sm"><div class="p-6 text-center">
+<span class="text-primary text-xs font-black uppercase tracking-[0.2em] mb-2 block">Personalized Accents</span>
+<h4 class="text-white text-2xl font-bold mb-2">Decorative Cushions</h4>
+<p class="text-slate-300 text-sm leading-relaxed">Hand-finished accents with custom embroidery and luxury fill materials.</p>
+<div class="mt-4 h-1 w-12 bg-primary mx-auto"></div>
+</div></div>
+</div>
+<!-- Item 6: Upholstery Detail -->
+<div class="group relative overflow-hidden rounded-2xl aspect-square bg-slate-900">
+<img alt="Stitching Detail" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc4-lBcxmkEg64CkMNnfWsWANfU9TQwjXjCLEO3FGgINk-hw-kGtQounyjHuRCygK2XMxkVDzmtVhNLe6hykLuSBGjnz469yMwIk3IKxBips6h_tCW0hCgLs1IO_anBaemj6HiglvHdj4sOaOmxTBa1c3qdtJIRtAtoHQ21XRWpnupS83Hj4_LsUM8PTuIssWP5vtcL36yJJIiJWxAJpza6Wfp9NmUkkwydRfxp_zilsO9oJIwcY6lPSW-XYcQilDDNNGOv5thgrVH"/>
+<div class="absolute inset-0 bg-background-dark/80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-blur-sm"><div class="p-6 text-center">
+<span class="text-primary text-xs font-black uppercase tracking-[0.2em] mb-2 block">Master Craftsmanship</span>
+<h4 class="text-white text-2xl font-bold mb-2">Precision Stitching</h4>
+<p class="text-slate-300 text-sm leading-relaxed">Showcasing the meticulous 'order-base' attention to every stitch and seam.</p>
+<div class="mt-4 h-1 w-12 bg-primary mx-auto"></div>
+</div></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Social Proof -->
+<section class="bg-background-dark px-6 py-20 md:p-24 flex flex-col justify-center relative overflow-hidden" id="reviews">
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="max-w-7xl mx-auto w-full relative z-10">
+<div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-8">
+<div>
+<h2 class="text-primary font-bold tracking-widest uppercase mb-4 text-center md:text-left">Testimonials</h2>
+<h3 class="text-4xl md:text-6xl font-black mb-4 text-center md:text-left">Loved by Our Clients</h3>
+</div>
+<div class="flex items-center gap-4 bg-white/5 p-6 rounded-2xl border border-white/10">
+<div class="text-center">
+<div class="flex text-primary">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+</div>
+<p class="text-2xl font-black mt-1">5.0 Rating</p>
+<p class="text-xs text-slate-400 uppercase tracking-tighter">Verified Google Reviews</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Review 1 -->
+<div class="bg-slate-900/40 p-8 rounded-2xl border border-white/5 flex flex-col justify-between">
+<div>
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+<p class="text-slate-300 italic mb-6">"Excellent craftsmanship and great attention to detail. The sofa we ordered fits perfectly in our living room. Highly recommended!"</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center font-bold text-primary">HB</div>
+<p class="font-bold">Hindu Bharat Choudhary</p>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-slate-900/40 p-8 rounded-2xl border border-white/5 flex flex-col justify-between">
+<div>
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+<p class="text-slate-300 italic mb-6">"The best place for curtains and sofas in Surat. The quality of fabric is premium and delivery was right on time."</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center font-bold text-primary">GA</div>
+<p class="font-bold">Gualm Ali</p>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-slate-900/40 p-8 rounded-2xl border border-white/5 flex flex-col justify-between">
+<div>
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+<p class="text-slate-300 italic mb-6">"Very satisfied with my orthopedic mattress. The build quality is superior to many big brands. Excellent service."</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center font-bold text-primary">MP</div>
+<p class="font-bold">Mahendra Prajapati</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Contact & Location -->
+<section class="flex flex-col md:flex-row items-stretch bg-background-light dark:bg-background-dark" id="contact">
+<div class="w-full md:w-1/2 px-6 py-16 md:p-24 flex flex-col justify-center">
+<h2 class="text-primary font-bold tracking-widest uppercase mb-4">Get In Touch</h2>
+<h3 class="text-4xl md:text-6xl font-black mb-8">Visit Our Showroom</h3>
+<div class="space-y-8 mb-12">
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<div>
+<p class="font-bold mb-1">Address</p>
+<p class="text-slate-400">Shop no. A4, A5 Raj Palace, Shamladham Society, Godadara, Surat, Gujarat 395012</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<div>
+<p class="font-bold mb-1">Hours</p>
+<p class="text-slate-400">Monday - Sunday: Open until 10:00 PM</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary">share</span>
+<div>
+<p class="font-bold mb-1">Social</p>
+<a class="text-primary hover:underline flex items-center gap-1" href="https://www.instagram.com/_jay_ambe_sofa_house_/" target="_blank">
+                            Follow us on Instagram <span class="material-symbols-outlined text-xs">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<button class="bg-primary text-background-dark w-full md:w-max px-12 py-5 rounded-lg font-black text-xl flex items-center justify-center gap-3">
+<span class="material-symbols-outlined">directions</span> GET DIRECTIONS
+            </button>
+</div>
+<div class="w-full md:w-1/2 relative min-h-[400px]">
+<div class="absolute inset-0 grayscale contrast-125 opacity-70">
+<img class="w-full h-full object-cover" data-alt="Stylized map showing shop location" data-location="Surat, Gujarat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnC0a65haBoxc8odL9lrZpmRhrlcPf682InLZCWxsJRFUac53vHbY5qIxxyKEwFZ1JpFkY6g5466gmcSwgZ0OiKdwu4gcjr-PsUpKAw8BqXo6a8ujga-wrv5NSsryLgfjfPFzaiTuIPcUM_NFRsg77sGJffzUpDC1f3Zen4kSCSdstE1InSL-cnxsFohVp8VDkjGLjdCGMAiqeTmq1yWjTRW-4hAm9zRkFNp1jkJW-Iwj7B6_gAN2JGexms_lrozpeN-ldzSJRHYfm"/>
+</div>
+<div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-background-dark p-6 rounded-2xl shadow-2xl border border-primary/20 animate-pulse">
+<span class="material-symbols-outlined text-primary text-5xl">location_on</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<section class="bg-background-dark px-6 py-20 md:p-24 flex flex-col justify-center" id="faq">
+<div class="max-w-4xl mx-auto w-full">
+<div class="mb-16 text-center">
+<h2 class="text-primary font-bold tracking-widest uppercase mb-4">Information</h2>
+<h3 class="text-4xl md:text-6xl font-black mb-4">Common Inquiries</h3>
+<p class="text-slate-400">Everything you need to know about our bespoke furniture process.</p>
+</div>
+<div class="space-y-6">
+<!-- FAQ Item 1 -->
+<div class="bg-slate-900/40 border border-white/5 p-6 rounded-2xl hover:border-primary/30 transition-all">
+<h4 class="text-xl font-bold mb-3 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">design_services</span>
+How do I start a custom sofa order?
+</h4>
+<p class="text-slate-400">The process begins with a consultation where we discuss your space, style preferences, and comfort requirements. You can visit our showroom or contact us via call/Instagram to share your initial ideas.</p>
+</div>
+<!-- FAQ Item 2 -->
+<div class="bg-slate-900/40 border border-white/5 p-6 rounded-2xl hover:border-primary/30 transition-all">
+<h4 class="text-xl font-bold mb-3 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">history</span>
+What is the typical lead time for a custom piece?
+</h4>
+<p class="text-slate-400">Generally, bespoke sofas take between 2 to 4 weeks to manufacture depending on the complexity of the design and availability of the selected fabric. We always prioritize quality over speed to ensure a perfect finish.</p>
+</div>
+<!-- FAQ Item 3 -->
+<div class="bg-slate-900/40 border border-white/5 p-6 rounded-2xl hover:border-primary/30 transition-all">
+<h4 class="text-xl font-bold mb-3 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">texture</span>
+Can I choose my own fabric and cushions?
+</h4>
+<p class="text-slate-400">Absolutely. We offer a vast library of premium fabrics in various textures and colors. You can also customize the firmness of your cushions—from soft cloud-like comfort to firm orthopedic support.</p>
+</div>
+<!-- FAQ Item 4 -->
+<div class="bg-slate-900/40 border border-white/5 p-6 rounded-2xl hover:border-primary/30 transition-all">
+<h4 class="text-xl font-bold mb-3 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">description</span>
+What is the 'Order Base' process?
+</h4>
+<p class="text-slate-400">'Order Base' means we don't just sell pre-made stock. Every item is built from the ground up based on a specific customer's order. This ensures your furniture is unique and perfectly suited to your specific interior dimensions.</p>
+</div>
+</div>
+</div>
+</section><footer class="bg-black py-12 px-6 text-center border-t border-white/5">
+<div class="flex items-center justify-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary">chair</span>
+<h2 class="text-xl font-extrabold tracking-tight uppercase">Jay Ambe Sofa House</h2>
+</div>
+<p class="text-slate-500 text-sm">© 2024 Jay Ambe Sofa House. All rights reserved. Crafted with passion for premium living.</p>
+</footer>
+</body></html>
